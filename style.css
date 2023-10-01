@@ -1,0 +1,98 @@
+/* Estilos para o container de produtos */
+#container-produto {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 por fileira */
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para os cartões de produtos */
+#container-produto .border-solid {
+    border-width: 2px;
+    border-color: #1E40AF;
+}
+
+#container-produto img {
+    height: 300px;
+    object-fit: cover;
+}
+
+#container-produto .marca {
+    color: #6B7280;
+    font-weight: bold;
+}
+
+#container-produto p {
+    margin: 0.5rem 0;
+}
+
+#container-produto button {
+    background-color: #86e68a;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#container-produto button:hover {
+    background-color: #a0a9a0b8;
+}
+
+/* Estilos para o cabeçalho (header) com a logo */
+.logo {
+    background-color: #f3f4f6; /* Cor de fundo cinza */
+    padding: 1rem; /* Espaçamento interno */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.logo img {
+    max-height: 100px; /* Altura máxima da logo */
+    max-width: 100%; /* Largura máxima da logo */
+}
+
+/* Estilos para os botões no canto inferior direito da tela */
+.buttons-corner {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.buttons-corner button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons-corner button:last-child {
+    margin-bottom: 0; /* Remove a margem inferior do último botão */
+}
+
+.buttons-corner button:hover {
+    background-color: #45a049;
+}
+
+#container-produto {
+    margin-top: 150px; /* Ajuste conforme necessário */
+}
+
+
